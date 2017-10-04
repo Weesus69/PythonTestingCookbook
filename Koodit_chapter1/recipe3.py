@@ -24,7 +24,12 @@ ajetaan sitten kun tämä file ajetaan. Testit testaa että roomalainen numero j
 oikein. Lisäksi testataan nolla arvo ja tyhjä arvo. Jotta testit saadaan ajoon pitää lopuksi määrittää
 if __name__ == "__main__":
     unittest.main()
-Jos tätä ei ole niin sitten varsinainen ajo suorittaa vain pääluokkaa eikä aja testejä'''
+Jos tätä ei ole niin sitten varsinainen ajo suorittaa vain pääluokkaa eikä aja testejä
+Tässä lisätty vielä verbositya eli:
+if __name__ == "__main__":
+    suite = unittest.TestLoader().loadTestsFromTestCase(RomanNumeralKaantajaTest)
+    unittest.TextTestRunner(verbosity=2).run(suite)
+Aja niin selviää'''
 
 import unittest
 
